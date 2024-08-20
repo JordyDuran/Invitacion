@@ -1,3 +1,132 @@
+
+/*---------------------------------------------------o--------------------------------------------------*/
+/* keyframe para animacion suave al hacer scroll
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-on-scroll {
+    opacity: 0; /* Inicialmente invisible 
+    transform: translateY(20px); /* Inicialmente desplazado 
+    transition: opacity 0.6s ease, transform 0.6s ease;  Transición suave 
+}
+
+/* Clase añadida cuando el elemento está en vista 
+.animate {
+    animation: slideUp 0.6s ease forwards;
+} */
+
+/*---------------------------------------------------o--------------------------------------------------*/
+
+
+/*---------------------------------------------------o--------------------------------------------------*/
+
+/* keyframe para el fadein al abrir la pagina*/
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .frase1 {
-    animation: fadeIn 3s ease-in forwards;
+    opacity: 0; /* Inicialmente invisible */
+    animation: fadein 1.2s ease-in forwards;
+    animation-delay: 1.2s; /* Retraso de 2 segundos antes de comenzar la animación */
+}
+.frase1 {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Altura del contenedor igual a la altura de la ventana del navegador */
+    margin: 0; /* Elimina márgenes por defecto */
+}
+
+/*---------------------------------------------------o--------------------------------------------------*/
+
+/*---------------------------------------------------o--------------------------------------------------*/
+
+/* Animación de fade-in */
+
+/* EL KEYFRAME DE FADE ON SCROLL ESTÁ ARRIBA */
+
+
+
+/* Clase inicial para los elementos que deben animarse */
+.fade-in-on-scroll {
+    opacity: 0; /* Inicialmente invisible */
+    visibility: hidden; /* Oculto inicialmente */
+    transition: opacity 0.6s ease-out, visibility 0.6s ease-out; /* Transición suave */
+}
+
+/* Clase añadida cuando el elemento está en vista */
+.fade-in {
+    opacity: 1;
+    visibility: visible; /* Se hace visible */
+    animation: fadeIn 1s ease-out forwards; /* Ajusta la duración y el timing */
+}
+
+
+/*---------------------------------------------------o--------------------------------------------------*/
+
+.padres {
+
+}
+
+.novios {
+
+
+}
+
+.nuestraboda{
+
+}
+
+.presencia {
+
+}
+
+.fecha {
+
+}
+
+.lugar {
+
+}
+
+.dress {
+
+}
+
+.frase2 {
+
+}
+
+.regalo {
+
+}
+
+.regalo {
+
+}
+
+.invitados {
+
+}
+
+.itinerario {
+
+}
+
+.confirm {
+
 }

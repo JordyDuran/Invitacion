@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Invitación de Boda</title>
     <style>
+        
         body {
             font-family: Arial, sans-serif;
             background-color: #f8f9fa;
@@ -16,7 +18,7 @@
             min-height: 100vh;
         }
 
-        .container {
+        .todo {
             max-width: 400px;
             width: 100%;
             text-align: center;
@@ -48,10 +50,19 @@
                 padding: 15px;
             }
         }
+        
+        @keyframes fadein{
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="todo">
         <!-- Frase -->
         <div class="frase1">
             "Para siempre es un río <br>
@@ -65,12 +76,10 @@
         <!-- Bendición de los padres -->
         <div class="padres">
             <h3>Con la bendicion de nuestros padres:</h3>
-            ✝Ceclio Ramirez López <br>
+            ✝Cecilio Ramirez López <br>
             ✝Inocencia Juárez Morales
-            <p></p>
-        </div>
-
-        <div class="padres">
+            <br> <br> <br>
+        
             Isaías González Zapata<br>
             María Esther Jiménez Morales<p> </p>
             
@@ -105,7 +114,7 @@
             <h3>Fecha y Hora</h3>
             Sábado 21 de diciembre de 2024
             <br>04:00 PM
-            <br><br>
+            <br><br><br>
 
         </div>
 
@@ -113,14 +122,18 @@
         <div class="lugar">
             <h3>Ceremonia y recepción</h3>
             <p>Jardín de eventos "El Frutillo"</p>
+            <br>
+
+            <!-- Agregar boton con direccion a maps-->
+                <p>boton</p>
             <br><br><br>
         </div>
 
         <!-- Dress Code -->
         <div class="dress">
             <h3>Dress Code</h3>
-            <p>Elegante casual</p>
-            <br><br>
+            <p>Semiformal</p>
+            <br>
         </div>
 
         <!-- Otra frase -->
@@ -134,20 +147,47 @@
         <div class="regalo">
             <h3>Sugerencias de Regalo</h3>
             <p>Su presencia es nuestro mejor regalo, pero si desea obsequiarnos algo, aquí algunas sugerencias:</p>
-            <p>Lista de regalos o cuenta bancaria</p>
+            <p>Regalo Físico</p>
+            <p>Efectivo</p>
+            <p>Mesa de regalo en amazon.com</p>
+            <br>
+
         </div>
 
-        <!-- Última frase -->
-        <div class="section">
-            <p>"Frase final para despedirse"</p>
+        <!-- Aviso invitados -->
+        <div class="invitados">
+            <p>Para disfrutar de una noche relajante y sin preocupaciones, <br>
+               hemos decidido que nuestra boda sea solo para adultos. 
+            </p>
+            <p>SIN NIÑOS MENORES DE 16 AÑOS SIN EXCEPCIÓN</p>
+            <br>
         </div>
+
 
         <!-- Itinerario -->
-        <div class="section">
-            <h3>Itinerario del Día</h3>
-            <p>Ceremonia: 00:00 AM/PM</p>
-            <p>Recepción: 00:00 AM/PM</p>
-            <p>Baile: 00:00 AM/PM</p>
+        <div class="itinerario">
+            <h3>Itinerario</h3>
+            <p>Ceremonia: 04:00 PM</p>
+            <p>Fotos: 04:45 PM</p>
+            <p>Baile de novios: 06:00 PM</p>
+            <p>Cena: 06:15 PM</p>
+            <p>Pastel: 07:30 PM</p>
+            <p>Ramo: 07:45 PM</p>
+            <p>Abrimos pista: 08:00 PM</p>
+
+            <p>"Hasta el amanecer"</p>
+            <br>
+        </div>
+
+        <div class="confirm">
+            <h3>Agradecemos tu confirmacion de asistencia antes del 1 de diciembre de 2024</h3>
+
+            <!-- Añadir botones de confirmación-->
+
+
+
+            <!-- fin botones de confirmación-->
+
         </div>
     </div>
 </body>

@@ -191,7 +191,7 @@
 /* Estilos para la descripción del evento */
 .timeline-description1 {
     font-size: 16px;
-    padding-left: 13px;
+    padding-left: 0px;
     text-align: center;
 }
 
@@ -206,7 +206,7 @@
     right: -15px;
     border-width: 10px;
     border-style: solid;
-    border-color: transparent transparent transparent #f9f9f9;
+    border-color: transparent transparent transparent #851f1f;
 }
 
 .timeline-item.right .timeline-content::before {
@@ -216,10 +216,13 @@
     left: -15px;
     border-width: 10px;
     border-style: solid;
-    border-color: transparent #f9f9f9 transparent transparent;
+    border-color: transparent #851f1f transparent transparent;
 }
 
 .size-iz {
-    
+    padding-right: 6px;
 
+}
+.alinear {
+    text-align: center;
 }

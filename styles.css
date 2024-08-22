@@ -125,3 +125,101 @@
 .confirm {
 
 }
+
+/* Estilos generales para el contenedor */
+.timeline-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Línea vertical en el centro */
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #000;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Estilos para cada bloque de la línea de tiempo */
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 10px 40px;
+    box-sizing: border-box;
+    margin-bottom: -60px; /* Reduce este valor para acercar los elementos */
+}
+
+/* Posiciona los elementos a la izquierda y derecha de la línea */
+.timeline-item.left {
+    left: 0;
+    text-align: right;
+    top: -10px; /* Ajusta este valor para acercar más los elementos */
+}
+
+.timeline-item.right {
+    left: 50%;
+    top: -10px; /* Ajusta este valor para acercar más los elementos */
+}
+
+/* Contenido de cada elemento */
+.timeline-content {
+    position: relative;
+    padding: 15px;
+    border-radius: 6px;
+    background-color: transparent; /* Sin fondo */
+}
+
+/* Imagen pequeña sobre la hora */
+.timeline-img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para la hora */
+.timeline-time {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Estilos para la descripción del evento */
+.timeline-description1 {
+    font-size: 16px;
+    padding-left: 13px;
+    text-align: center;
+}
+
+.timeline-description2 {
+    font-size: 16px;
+}
+/* Flechas que apuntan a la línea central */
+.timeline-item.left .timeline-content::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    right: -15px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #f9f9f9;
+}
+
+.timeline-item.right .timeline-content::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: -15px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #f9f9f9 transparent transparent;
+}
+
+.size-iz {
+    
+
+}

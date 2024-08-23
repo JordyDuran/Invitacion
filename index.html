@@ -92,11 +92,7 @@
         <!-- Invitación -->
         <div class="nuestraboda">
             <p>Tendremos el honor de invitarlos a celebrar</p>
-            <h2>NUESTRA BODA</h2>
-        </div>
-
-        <!-- Texto adicional -->
-        <div class="presencia">
+            <h2 class="nuestraboda">NUESTRA BODA</h2>
             <p>Queremos que seas parte y nos acompañes a vivir este momento.</p>
 
         </div>
@@ -107,17 +103,45 @@
             Sábado 21 de diciembre de 2024
             <br>04:00 PM
 
-
         </div>
 
         <!-- Lugar de ceremonia -->
         <div class="lugar">
             <h3>Ceremonia y recepción</h3>
             <p>Jardín de eventos "El Frutillo"</p>
-            <br>
+            
 
-            <!-- Agregar boton con direccion a maps-->
-                <p>boton</p>
+
+            <!-- Agregar boton con direccion a maps   19.05321153662736, -96.43196645173508 
+
+                                        *******************QUEDA PENDIENTE. ASIGNAR 22 SEPTIEMBRE**********************
+                                        *******************QUEDA PENDIENTE. ASIGNAR 22 SEPTIEMBRE**********************
+                                        *******************QUEDA PENDIENTE. ASIGNAR 22 SEPTIEMBRE**********************
+
+                <p>Cuadro maps ubicacion</p>
+
+                <div id="map"></div>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_API&callback=initMap" async defer></script>
+<script>
+    function initMap() {
+        // Coordenadas de la ubicación que deseas marcar
+        var location = { lat: 19.432608, lng: -99.133209 }; // Ejemplo: Ciudad de México
+
+        // Crear el mapa centrado en la ubicación especificada
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 14, // Nivel de zoom
+            center: location
+        });
+
+        // Añadir un marcador en la ubicación
+        var marker = new google.maps.Marker({
+            position: location,
+            map: map,
+            title: 'Ubicación del evento' // Texto que aparece al pasar el cursor sobre el marcador
+        });
+    }
+</script>    -->
 
         </div>
 

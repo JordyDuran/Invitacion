@@ -1,3 +1,4 @@
+// Tu código actual
 document.addEventListener('DOMContentLoaded', function() {
     const elements = document.querySelectorAll('.fade-in-on-scroll');
 
@@ -13,4 +14,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.addEventListener('scroll', checkPosition);
     checkPosition(); // Verifica la posición al cargar la página
+});
+
+// Nuevo código para el texto con fade-in secuencial
+document.addEventListener("DOMContentLoaded", function() {
+    const lines = document.querySelectorAll(".line");
+    
+    lines.forEach(line => {
+        setTimeout(() => {
+            line.style.opacity = 1;
+        }, line.getAttribute("data-delay") * 1000);
+    });
 });

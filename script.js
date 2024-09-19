@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
     checkPosition(); // Verifica la posición al cargar la página
 });
 
-// Nuevo código para el texto con fade-in secuencial
+// Codigo para el texto con fade-in secuencial
 document.addEventListener("DOMContentLoaded", function() {
     const lines = document.querySelectorAll(".line");
     
@@ -24,5 +24,16 @@ document.addEventListener("DOMContentLoaded", function() {
         setTimeout(() => {
             line.style.opacity = 1;
         }, line.getAttribute("data-delay") * 1000);
+    });
+});
+
+//Codigo para aparecer texto 
+document.addEventListener('DOMContentLoaded', function() {
+    const words = document.querySelectorAll('.word');
+
+    words.forEach((word, index) => {
+        setTimeout(() => {
+            word.classList.add('fade-in');
+        }, index * 400);
     });
 });

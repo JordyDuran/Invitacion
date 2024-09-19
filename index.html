@@ -11,9 +11,9 @@
     <title>Invitación de Boda</title>
     <style>
         
-        body {
+        body {        
             
-            background-color: #f8f9fa;
+            /*background-color: #f8f9fa;*/
             margin: 0;
             padding: 0;
             display: flex;
@@ -24,13 +24,21 @@
         
 
         .todo {
+            background-image: url('media/fondo2.jpg');
             max-width: 400px;
-            width: 100%;
+            width: 400px;
             text-align: center;
             padding: 20px;
             background-color: #feebc0;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-image: url('media/fondo.jpg'); /* Ruta de la imagen */
+    background-size: cover; /* Mantiene el tamaño original de la imagen */
+    background-position: top left; /* Posiciona la imagen en la esquina superior izquierda */
+    background-repeat:repeat-y; /* Hace que la imagen se repita tanto horizontal como verticalmente */
+    background-attachment: scroll; /* La imagen se desplaza junto con el contenido */
+    margin: 0;
+    padding: 0;
         }
 
         h1, h2, h3 {
